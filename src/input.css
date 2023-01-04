@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+
+.card {
+  @apply flex flex-col px-8 bg-white py-9 dark:bg-[#243447] rounded-[10px] border-2 border-[#1DA1F2]/20 drop-shadow-[0_15px_60px_rgba(29,161,242,0.15)] dark:drop-shadow-[0_15px_60px_rgba(52,81,116,0.15)] max-w-[630px] dark:border-none font-card gap-[15px];
+}
+.card__header {
+  @apply flex items-center justify-between;
+}
+.card__body {
+  @apply dark:font-[300] font-normal text-black dark:text-white tracking-wide;
+}
+.card__footer {
+  @apply flex items-center font-semibold gap-[20px] dark:text-gray-400 text-gray-500;
+}
